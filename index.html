@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Team</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Latebind</h1>
+    <p>Code with purpose. Built with care.</p>
+  </header>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      Latebind is a team of developers focused on building reliable, well-crafted software. We work across the stack — from clean front-end interfaces to solid back-end logic — with an emphasis on writing code that's maintainable and genuinely useful. Founded in 2026, our goal is simple: solve real problems with software people actually enjoy using.
+    </p>
+  </section>
+
+  <section id="team">
+    <h2>Our Team</h2>
+    <div class="team-grid">
+
+      <div class="member-card" onclick="showMember('member1')">
+        <img src="https://via.placeholder.com/150" alt="Member photo">
+        <h3>Muborak Abduqodirova</h3>
+        <p>Backend Developer</p>
+      </div>
+
+      <!-- Other members will add their own card here, same structure -->
+
+    </div>
+  </section>
+
+  <!-- Hidden detail panels for each member -->
+  <div id="member1" class="member-detail hidden">
+    <h3>Muborak Abduqodirova</h3>
+    <p><strong>Role:</strong> Backend Developer</p>
+    <p><strong>Bio:</strong>Specializes in backend development, with a focus on solid database design and efficient API architecture. Brings a problem-solving mindset and attention to detail to every project, ensuring systems are both reliable and easy to maintain.</p>
+    <p><strong>Contact:</strong> MuborakAbduqodirova@gmail.com</p>
+    <button onclick="closeDetail('member1')">Close</button>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Latebind. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
