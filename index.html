@@ -18,14 +18,12 @@
     </p>
   </section>
 
-  <!-- NEW SECTION ADDED IN VERSION 2 -->
   <section id="mission">
     <h2>Our Mission</h2>
     <p>
       We believe great software starts with great teamwork. Our mission is to keep learning, keep building, and support each other as we grow as developers.
     </p>
   </section>
-  <!-- END NEW SECTION -->
 
   <section id="team">
     <h2>Our Team</h2>
@@ -35,17 +33,63 @@
         <h3>Muborak Abduqodirova</h3>
         <p>Backend Developer</p>
       </div>
-      <!-- Other members will add their own card here, same structure -->
+
+      <!-- NEW MEMBERS ADDED IN VERSION 3 -->
+      <div class="member-card" onclick="showMember('member2')">
+        <img src="https://via.placeholder.com/150" alt="Member photo">
+        <h3>Shaxnoza Nizomova</h3>
+        <p>Frontend Developer</p>
+      </div>
+
+      <div class="member-card" onclick="showMember('member3')">
+        <img src="https://via.placeholder.com/150" alt="Member photo">
+        <h3>Mavlon Tursunov</h3>
+        <p>UI/UX Designer</p>
+      </div>
+
+      <div class="member-card" onclick="showMember('member4')">
+        <img src="https://via.placeholder.com/150" alt="Member photo">
+        <h3>Diyora Karimova</h3>
+        <p>Project Manager</p>
+      </div>
+      <!-- END NEW MEMBERS -->
+
     </div>
   </section>
+
   <!-- Hidden detail panels for each member -->
   <div id="member1" class="member-detail hidden">
     <h3>Muborak Abduqodirova</h3>
     <p><strong>Role:</strong> Backend Developer</p>
-    <p><strong>Bio:</strong>Specializes in backend development, with a focus on solid database design and efficient API architecture. Brings a problem-solving mindset and attention to detail to every project, ensuring systems are both reliable and easy to maintain.</p>
+    <p><strong>Bio:</strong> Specializes in backend development, with a focus on solid database design and efficient API architecture. Brings a problem-solving mindset and attention to detail to every project, ensuring systems are both reliable and easy to maintain.</p>
     <p><strong>Contact:</strong> MuborakAbduqodirova@gmail.com</p>
     <button onclick="closeDetail('member1')">Close</button>
   </div>
+
+  <div id="member2" class="member-detail hidden">
+    <h3>Shaxnoza Nizomova</h3>
+    <p><strong>Role:</strong> Frontend Developer</p>
+    <p><strong>Bio:</strong> Focuses on building clean, responsive user interfaces with attention to accessibility and user experience. Enjoys turning design concepts into smooth, functional web pages and collaborating closely with designers and backend developers.</p>
+    <p><strong>Contact:</strong> ShaxnozaNizomova@gmail.com</p>
+    <button onclick="closeDetail('member2')">Close</button>
+  </div>
+
+  <div id="member3" class="member-detail hidden">
+    <h3>Mavlon Tursunov</h3>
+    <p><strong>Role:</strong> UI/UX Designer</p>
+    <p><strong>Bio:</strong> Passionate about creating intuitive and visually appealing designs. Combines user research with creative design thinking to craft interfaces that are both functional and enjoyable to use.</p>
+    <p><strong>Contact:</strong> MavlonTursunov@gmail.com</p>
+    <button onclick="closeDetail('member3')">Close</button>
+  </div>
+
+  <div id="member4" class="member-detail hidden">
+    <h3>Diyora Karimova</h3>
+    <p><strong>Role:</strong> Project Manager</p>
+    <p><strong>Bio:</strong> Coordinates team workflows, tracks project milestones, and ensures clear communication between developers and stakeholders. Brings strong organizational skills and a focus on delivering projects on time.</p>
+    <p><strong>Contact:</strong> DiyoraKarimova@gmail.com</p>
+    <button onclick="closeDetail('member4')">Close</button>
+  </div>
+
   <footer>
     <p>&copy; 2026 Latebind. All rights reserved.</p>
   </footer>
