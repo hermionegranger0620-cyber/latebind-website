@@ -10,7 +10,11 @@
   <header>
     <h1>Latebind</h1>
     <p>Code with purpose. Built with care.</p>
+    <button onclick="toggleDarkMode()" style="margin-top:10px;padding:8px 16px;cursor:pointer;">
+      🌙 Toggle Dark Mode
+    </button>
   </header>
+
   <section id="about">
     <h2>About Us</h2>
     <p>
@@ -34,7 +38,6 @@
         <p>Backend Developer</p>
       </div>
 
-      <!-- NEW MEMBERS ADDED IN VERSION 3 -->
       <div class="member-card" onclick="showMember('member2')">
         <img src="https://via.placeholder.com/150" alt="Member photo">
         <h3>Shaxnoza Nizomova</h3>
@@ -52,12 +55,9 @@
         <h3>Diyora Karimova</h3>
         <p>Project Manager</p>
       </div>
-      <!-- END NEW MEMBERS -->
-
     </div>
   </section>
 
-  <!-- Hidden detail panels for each member -->
   <div id="member1" class="member-detail hidden">
     <h3>Muborak Abduqodirova</h3>
     <p><strong>Role:</strong> Backend Developer</p>
@@ -90,9 +90,14 @@
     <button onclick="closeDetail('member4')">Close</button>
   </div>
 
+  <button id="backToTop" onclick="scrollToTop()" style="display:none;position:fixed;bottom:20px;right:20px;padding:10px 15px;cursor:pointer;">
+    ⬆ Top
+  </button>
+
   <footer>
     <p>&copy; 2026 Latebind. All rights reserved.</p>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>

@@ -75,3 +75,14 @@ footer {
   color: white;
   margin-top: 40px;
 }
+
+.dark-mode {
+  background-color: #121212 !important;
+  color: #eee !important;
+}
+.dark-mode .member-card,
+.dark-mode .member-detail {
+  background-color: #1e1e1e !important;
+  color: #eee !important;
+  border-color: #444 !important;
+}
