@@ -7,12 +7,10 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <header>
     <h1>Latebind</h1>
     <p>Code with purpose. Built with care.</p>
   </header>
-
   <section id="about">
     <h2>About Us</h2>
     <p>
@@ -20,21 +18,26 @@
     </p>
   </section>
 
+  <!-- NEW SECTION ADDED IN VERSION 2 -->
+  <section id="mission">
+    <h2>Our Mission</h2>
+    <p>
+      We believe great software starts with great teamwork. Our mission is to keep learning, keep building, and support each other as we grow as developers.
+    </p>
+  </section>
+  <!-- END NEW SECTION -->
+
   <section id="team">
     <h2>Our Team</h2>
     <div class="team-grid">
-
       <div class="member-card" onclick="showMember('member1')">
         <img src="https://via.placeholder.com/150" alt="Member photo">
         <h3>Muborak Abduqodirova</h3>
         <p>Backend Developer</p>
       </div>
-
       <!-- Other members will add their own card here, same structure -->
-
     </div>
   </section>
-
   <!-- Hidden detail panels for each member -->
   <div id="member1" class="member-detail hidden">
     <h3>Muborak Abduqodirova</h3>
@@ -43,11 +46,9 @@
     <p><strong>Contact:</strong> MuborakAbduqodirova@gmail.com</p>
     <button onclick="closeDetail('member1')">Close</button>
   </div>
-
   <footer>
     <p>&copy; 2026 Latebind. All rights reserved.</p>
   </footer>
-
   <script src="script.js"></script>
 </body>
 </html>
